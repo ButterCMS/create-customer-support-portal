@@ -1,12 +1,24 @@
 <template>
-	<div class="body flex">
-		<nav class="w-full min-h-screen w-xs min-w-xs bg-white">
+	<div class="body relative flex">
+		<nav
+			class="site-nav <md:(fixed left-0 transform -translate-x-full) w-full min-h-screen h-full w-xs min-w-xs bg-white z-50"
+			:class="{ active: navActive }"
+		>
 			<div class="wrapper flex flex-col gap-4">
-				<header class="h-18 px-7 py-4 mb-4 border-r border-b border-gray-200">
-					<div class="wrapper flex items-center h-full">
+				<header
+					class="md:sticky top-0 h-18 px-7 py-4 mb-4 bg-white border-r border-b border-gray-200"
+				>
+					<div class="wrapper flex items-center justify-between h-full">
 						<figure class="logo">
 							<h1 class="font-bold text-cyan-600 text-xl">Patient Portal</h1>
 						</figure>
+
+						<button
+							class="site-nav-btn hidden <md:block transform translate-x-20 bg-white p-2 rounded-md"
+							@click="() => (navActive = !navActive)"
+						>
+							<hero-icon name="menuAlt4" />
+						</button>
 					</div>
 				</header>
 
@@ -22,8 +34,8 @@
 						</li>
 						<li class="link-item">
 							<nuxt-link to="/user">
-								<span> Personal Information </span>
-							</nuxt-link>
+								<span> Personal Information </span> </nuxt-link
+							>appointments
 						</li>
 						<li class="link-item">
 							<nuxt-link to="/appointments">
@@ -52,9 +64,11 @@
 		</nav>
 
 		<div class="cont flex-grow">
-			<header class="h-18 py-4 px-6 border-b border-b-gray-200 bg-white">
+			<header
+				class="sticky top-0 h-18 py-4 px-6 border-b border-b-gray-200 bg-white"
+			>
 				<div class="wrapper flex items-center justify-between w-full h-full">
-					<form action="">
+					<form action="" class="ml-10">
 						<div class="form-control flex gap-2 items-center">
 							<hero-icon name="search" class="text-cyan-600" />
 							<input
@@ -96,11 +110,20 @@
 <script setup>
 	import { useUser } from "~~/composables/states";
 	const { $heroIcons } = useNuxtApp();
-
 	const user = useUser();
+
+	const navActive = ref(false);
 </script>
 
 <style scoped>
+	.active {
+		@apply <md:(-translate-x-0);
+	}
+
+	.site-nav.active .site-nav-btn {
+		@apply transform translate-x-0;
+	}
+
 	.nav-section {
 		@apply px-4;
 	}

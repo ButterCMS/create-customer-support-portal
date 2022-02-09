@@ -4,6 +4,7 @@ import informationCircle from "~/assets/svg/heroicons/outline/information-circle
 import x from "~/assets/svg/heroicons/outline/x.svg?raw";
 import user from "~/assets/svg/heroicons/outline/user.svg?raw";
 import clock from "~/assets/svg/heroicons/outline/clock.svg?raw";
+import menuAlt4 from "~/assets/svg/heroicons/outline/menu-alt-4.svg?raw";
 
 // const heroIcons = {
 // 	search,
@@ -21,6 +22,7 @@ export default defineNuxtPlugin(() => {
 				x,
 				user,
 				clock,
+				menuAlt4,
 			},
 		},
 	};
