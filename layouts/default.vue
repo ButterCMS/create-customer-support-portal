@@ -34,8 +34,8 @@
 						</li>
 						<li class="link-item">
 							<nuxt-link to="/user">
-								<span> Personal Information </span> </nuxt-link
-							>appointments
+								<span> Personal Information </span>
+							</nuxt-link>
 						</li>
 						<li class="link-item">
 							<nuxt-link to="/appointments">
