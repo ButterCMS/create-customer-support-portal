@@ -6,7 +6,7 @@ export default defineNuxtPlugin(() => {
 
 	return {
 		provide: {
-			butter: Butter(config.API_TOKEN),
+			butter: Butter("ca035fa7f94b2a7f568d3c3f6568bd3b17b94dae"),
 		},
 	};
 });

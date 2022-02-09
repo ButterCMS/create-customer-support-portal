@@ -26,7 +26,9 @@
 							</nuxt-link>
 						</li>
 						<li class="link-item">
-							<span> Appointments </span>
+							<nuxt-link to="/appointments">
+								<span> Appointments </span>
+							</nuxt-link>
 						</li>
 					</ul>
 				</section>
