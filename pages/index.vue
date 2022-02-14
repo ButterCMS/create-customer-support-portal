@@ -28,10 +28,17 @@
 	import Appointment from "~~/components/appointment.vue";
 	import { useUser } from "~~/composables/states";
 
+	const { $butter } = useNuxtApp();
+
 	definePageMeta({
 		layout: false,
 	});
 
 	const user = useUser();
 	const appointments = user.value.fields.appointments;
+	const appointmentsColl = await $butter.content.retrieve(["appointments"], {
+		keys: "appointments[_id=202808]",
+	});
+
+	console.log(appointmentsColl);
 </script>

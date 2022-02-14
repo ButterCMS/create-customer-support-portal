@@ -30,3 +30,7 @@ body {
 .cta {
 	@apply p-2 px-4 rounded-lg text-cyan-50 bg-cyan-600 hover:bg-cyan-700;
 }
+
+.label {
+	@apply flex gap-2 w-min p-1 px-2 text-cyan-600 bg-cyan-200 mb-1 rounded-md;
+}

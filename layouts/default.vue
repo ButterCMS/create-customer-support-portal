@@ -1,7 +1,7 @@
 <template>
 	<div class="body relative flex">
 		<nav
-			class="site-nav <md:(fixed left-0 transform -translate-x-full) w-full min-h-screen h-full w-xs min-w-xs bg-white z-50"
+			class="site-nav sticky top-0 <md:(fixed left-0 transform -translate-x-full) w-full min-h-screen h-full w-xs min-w-xs bg-white z-50"
 			:class="{ active: navActive }"
 		>
 			<div class="wrapper flex flex-col gap-4">
@@ -10,7 +10,9 @@
 				>
 					<div class="wrapper flex items-center justify-between h-full">
 						<figure class="logo">
-							<h1 class="font-bold text-cyan-600 text-xl">Patient Portal</h1>
+							<nuxt-link to="/">
+								<h1 class="font-bold text-cyan-600 text-xl">Patient Portal</h1>
+							</nuxt-link>
 						</figure>
 
 						<button
@@ -50,13 +52,19 @@
 					</header>
 					<ul class="links">
 						<li class="link-item">
-							<span> FAQs for patient accounts </span>
+							<nuxt-link to="/faqs">
+								<span> FAQs</span>
+							</nuxt-link>
 						</li>
 						<li class="link-item">
-							<span> Knowledge Base </span>
+							<nuxt-link to="/kb">
+								<span> Knowledge Base </span>
+							</nuxt-link>
 						</li>
 						<li class="link-item">
-							<span> Recent Updates </span>
+							<nuxt-link to="/updates">
+								<span> Recent Updates </span>
+							</nuxt-link>
 						</li>
 					</ul>
 				</section>

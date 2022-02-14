@@ -5,6 +5,7 @@ import x from "~/assets/svg/heroicons/outline/x.svg?raw";
 import user from "~/assets/svg/heroicons/outline/user.svg?raw";
 import clock from "~/assets/svg/heroicons/outline/clock.svg?raw";
 import menuAlt4 from "~/assets/svg/heroicons/outline/menu-alt-4.svg?raw";
+import chevronDown from "~/assets/svg/heroicons/outline/chevron-down.svg?raw";
 
 // const heroIcons = {
 // 	search,
@@ -23,6 +24,7 @@ export default defineNuxtPlugin(() => {
 				user,
 				clock,
 				menuAlt4,
+				chevronDown,
 			},
 		},
 	};

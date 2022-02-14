@@ -17,7 +17,6 @@
 </template>
 
 <script setup>
-	import Appointment from "~~/components/appointment.vue";
 	import { useUser } from "~~/composables/states";
 
 	definePageMeta({

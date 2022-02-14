@@ -13,7 +13,7 @@
 	const user = await $butter.page
 		.retrieve("*", "john-doe")
 		.then(({ data: { data } }) => data)
-		.catch((err) => console.log(err.response));
+		.catch((err) => console.log(err));
 
 	useUpdateUser(user);
 </script>
