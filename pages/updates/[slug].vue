@@ -1,7 +1,14 @@
 <template>
 	<nuxt-layout name="default">
-		<article class="prose prose-xl p-4 m-auto">
-			<div class="wrapper">
+		<article class="">
+			<div class="img-cont">
+				<img
+					:src="article.fields.header.cover"
+					alt=""
+					class="h-60 w-full object-cover"
+				/>
+			</div>
+			<div class="wrapper prose prose-xl p-4 m-auto">
 				<header class="pb-4 mb-6 border-b border-b-gray-200">
 					<div class="wrapper">
 						<h1 class="font-bold text-5xl">
