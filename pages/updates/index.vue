@@ -11,32 +11,11 @@
 			<section class="py-4">
 				<div class="wrapper">
 					<ul class="flex flex-col gap-4 cont">
-						<li
+						<article
 							v-for="blogPost in blogPosts"
 							:key="blogPost.slug"
-							class="bg-white transition-all p-4 hover:shadow-md rounded-lg cursor-pointer"
-						>
-							<nuxt-link :to="`/updates/${blogPost.slug}`">
-								<header>
-									<div class="wrapper">
-										<h2 class="font-bold text-2xl">
-											{{ blogPost.fields.header.title }}
-										</h2>
-										<p>{{ blogPost.fields.header.description }}</p>
-										<span class="label mt-2">
-											<hero-icon name="clock" class="text-cyan-600 w-5 h-5" />
-											<h4 class="">
-												{{
-													new Date(
-														blogPost.fields.header.published
-													).toLocaleDateString()
-												}}
-											</h4>
-										</span>
-									</div>
-								</header>
-							</nuxt-link>
-						</li>
+							:article="blogPost"
+						></article>
 					</ul>
 				</div>
 			</section>

@@ -11,32 +11,11 @@
 			<section class="py-4">
 				<div class="wrapper">
 					<ul class="flex flex-col gap-4 cont">
-						<li
+						<article
 							v-for="article in articles"
 							:key="article.slug"
-							class="bg-white transition-all p-4 hover:shadow-md rounded-lg cursor-pointer"
-						>
-							<nuxt-link :to="`/kb/${article.slug}`">
-								<header>
-									<div class="wrapper">
-										<h2 class="font-bold text-2xl">
-											{{ article.fields.header.title }}
-										</h2>
-										<p>{{ article.fields.header.description }}</p>
-										<span class="label mt-2">
-											<hero-icon name="clock" class="text-cyan-600 w-5 h-5" />
-											<h4 class="">
-												{{
-													new Date(
-														article.fields.header.published
-													).toLocaleDateString()
-												}}
-											</h4>
-										</span>
-									</div>
-								</header>
-							</nuxt-link>
-						</li>
+							article="article"
+						></article>
 					</ul>
 				</div>
 			</section>
