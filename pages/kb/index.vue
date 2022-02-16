@@ -4,18 +4,14 @@
 			<header>
 				<div class="wrapper">
 					<h2 class="font-bold text-3xl">Knowledge Base</h2>
-					<p>Browse through our frequently asked questions</p>
+					<p>Browse through our collection of helpful articles and resources</p>
 				</div>
 			</header>
 
 			<section class="py-4">
 				<div class="wrapper">
 					<ul class="flex flex-col gap-4 cont">
-						<article
-							v-for="article in articles"
-							:key="article.slug"
-							article="article"
-						></article>
+						<article-item v-for="article in articles" :key="article.slug" :article="article"></article-item>
 					</ul>
 				</div>
 			</section>

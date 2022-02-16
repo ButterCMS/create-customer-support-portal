@@ -11,11 +11,12 @@
 			<section class="py-4">
 				<div class="wrapper">
 					<ul class="flex flex-col gap-4 cont">
-						<article
+						<article-item
 							v-for="blogPost in blogPosts"
 							:key="blogPost.slug"
 							:article="blogPost"
-						></article>
+						>
+						</article-item>
 					</ul>
 				</div>
 			</section>
@@ -24,6 +25,7 @@
 </template>
 
 <script setup>
+	import ArticleItem from "~~/components/articleItem.vue";
 	definePageMeta({
 		layout: false,
 	});
