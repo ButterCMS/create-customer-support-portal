@@ -1,5 +1,5 @@
 <template>
-	<span class="inline-flex h-auto stroke-current" v-html="$heroIcons[`${name}`]"></span>
+	<span class="inline-flex !h-auto stroke-current" v-html="$heroIcons[`${name}`]"></span>
 </template>
 <script>
 	export default defineComponent({
