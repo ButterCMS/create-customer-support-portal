@@ -50,9 +50,3 @@
 		.catch((err) => console.log(err));
 	// const doctor = $butter.
 </script>
-
-<style scoped>
-	.label {
-		@apply flex gap-2 w-min p-1 px-2 text-cyan-600 bg-cyan-200 mb-1 rounded-md;
-	}
-</style>
