@@ -1,4 +1,8 @@
-# Nuxt 3 Minimal Starter
+# create-customer-support-portal
+
+How to Create a Customer Portal with ButterCMS
+
+## Nuxt 3 Minimal Starter
 
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
