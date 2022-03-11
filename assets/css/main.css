@@ -1,0 +1,36 @@
+body {
+	@apply bg-gray-50 text-gray-800;
+	/* background: #333; */
+}
+
+.site-form {
+	@apply bg-white p-4 rounded-lg;
+}
+
+.form-group {
+	@apply flex gap-4;
+}
+
+.form-control {
+	@apply w-full py-2;
+}
+
+.form-check-control {
+	@apply;
+}
+
+.form-control label {
+	@apply block mb-2;
+}
+
+.form-control .form-input {
+	@apply p-2 w-full bg-blue-gray-50 border valid:border-cyan-600 outline-none rounded-md;
+}
+
+.cta {
+	@apply p-2 px-4 rounded-lg text-cyan-50 bg-cyan-600 hover:bg-cyan-700;
+}
+
+.label {
+	@apply flex items-center gap-2 w-min p-1 px-2 text-cyan-600 bg-cyan-200 mb-1 rounded-md;
+}
